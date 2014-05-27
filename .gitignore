@@ -1,0 +1,16 @@
+# Folders
+_obj
+_test
+
+_testmain.go
+.project
+*.exe
+*.sublime-project
+*.sublime-workspace
+/nbproject/
+.htaccess
+wp-config.php
+/wp-content/uploads/
+.DS_Store
+*.zip
+*.sql

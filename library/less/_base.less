@@ -1,0 +1,427 @@
+/*----------------------- Utilerias ----------------------- */
+
+.txt-bg {
+		text-transform: uppercase;
+		padding: 5px;
+}
+.bg-white {
+	background: @gray-lighter ;
+	color: @gray-dark;
+}
+
+.bg-black {
+		background:@gray-dark;
+		color: @gray-lighter ;
+}
+.img-responsive2 {
+	width: 100%;
+	height: auto;
+}
+.introSeccion {
+	h2 {}
+	span {
+		display: block;
+		text-transform: uppercase;
+		border-bottom: 2px solid @gray-dark;
+		padding: 10px 0;
+		margin: 10px 0 25px;
+		font-size: 18px;
+	}
+}
+.boxInt {
+	img {
+		width: 100%;
+	}
+}
+.cont-persona {
+	// No poner estilos a cont-persona solo es de referencia y se aplica en la def. de columna
+	article.item-persona {
+		position: relative;
+		margin: 0 -15px;
+		text-align: center;
+		img.img-1 {
+
+		}
+		img.img-2 {
+			display: none;
+		}
+		header {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.9);
+			color: @gray-lighter;
+			text-transform: uppercase;
+			}
+		&:hover {
+			img.img-2 {
+				display: block;
+				position: absolute;
+				top: 0;
+			}
+			header {
+				background: @brand-primary;
+			}
+		}
+	}
+		
+}
+
+article.item-noticia {
+	position: relative;
+	margin: 20px 0;
+	img {
+
+	}
+	header {
+		background: url('../svg/frame-noticias.svg') rgba(0, 0, 0, 0.6);
+		background-size: 100% 100%; 
+		padding: 10% 5%;
+		h4 {
+			color: @gray-lighter;
+			small {
+				display: inline-block;
+				padding-top: 10px;
+				color: @gray-lighter;
+				font-family: @font-family-serif;
+			}
+		}
+	}
+}
+
+
+/*----------------------- Inicio ----------------------- */
+
+#inicio {
+		background-image: url('../images/bg.png');
+		background-color: @gray-lighter;
+		background-repeat: no-repeat;
+		background-size: cover;
+		 -webkit-background-size: cover;
+		 -moz-background-size: cover;
+		 -o-background-size: cover;
+		.inicio-block {
+				width: 50%;
+				margin: 0 auto;
+				height: 100%;
+				position: relative;
+				.inicio-head {
+						#logo {
+								padding: 10%;
+						}
+						.cta-inicio {
+								font-family: @font-family-tits;
+								color: @gray-lighter;
+								text-transform: uppercase;
+								font-size: 25px;
+								border-bottom: 5px solid @gray-lighter;
+								padding: 0 0 2%;
+								h2 {
+										margin: 0 0 5%;
+								}
+						}
+				}
+				.inicio-footer {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						.player {
+								color: @gray-lighter;
+								font-size: 20px;
+						}
+						.mas {
+								a {
+										color: @gray;
+										font-size: 30px;
+								}
+						}
+				}
+		} 
+		
+}
+ 
+/*----------------------- Navegacion ----------------------- */
+#nav {
+		background: @white;
+		padding: 10px 0;
+		.navbar-brand {
+			margin: -20px 0 0;
+		}
+}
+/*----------------------- Navegacion ----------------------- */
+#intro {
+	#cta-home {
+		margin: 10% 0;
+		text-transform: uppercase;
+	}
+}
+/*----------------------- Slider ----------------------- */
+#cta-slide {
+
+}
+/*----------------------- Premios ----------------------- */
+
+#premios {
+	padding: 80px 0 ;
+	.item-premio {
+		border: 1px solid @gray-lighter;
+		margin: 0 -15px;
+		padding: 50px 20px;
+		h4,span {
+			text-transform: uppercase;
+		}
+		span {
+			display: block;
+			border-top: 1px solid @gray-lighter;
+			padding-top: 5px;
+
+		}
+		
+		&.item-mundo {
+			color: @prem-1;
+			&:hover {
+				border: 1px solid @prem-1;
+			}
+		}
+		&.item-mx {
+			color: @prem-2;
+			&:hover {
+				border: 1px solid @prem-2;
+			}
+		}
+		&.item-pub {
+			color: @prem-3;
+			&:hover {
+				border: 1px solid @prem-3;
+			}
+		}
+		&.item-kids {
+			color: @prem-4;
+			&:hover {
+				border: 1px solid @prem-4;
+			}
+		}
+		&.item-cat {
+			color: @prem-8;
+			&:hover {
+				border: 1px solid @prem-8;
+			}
+		}
+		&.item-fram {
+			color: @prem-7;
+			&:hover {
+				border: 1px solid @prem-7;
+			}
+		}
+		&.item-biom {
+			color: @prem-6;
+			&:hover {
+				border: 1px solid @prem-6;
+			}
+		}
+		&.item-corto {
+			color: @prem-5;
+			&:hover {
+				border: 1px solid @prem-5;
+			}
+		}
+		.prem {
+			width: 85px;
+			height: 85px;
+			margin: 0 auto 20px;
+			background-image: url('../images/sprite-premios.png') ;
+			background-repeat: no-repeat;
+			&.prem_mundo {
+				background-position: 0 0;
+			}
+			&.prem-mx	 {
+				background-position:  -85px 0;
+
+			}
+			&.prem_pub {
+				background-position: -170px 0;
+
+			}
+			&.prem_kids {
+				background-position: -255px 0;
+
+			}
+
+			&.prem_cat {
+				background-position: 0 -85px;
+
+			}
+			&.prem_fram {
+				background-position:  -85px -85px;
+
+			}
+
+			&.prem_biom {
+				background-position: -170px -85px;
+
+			}
+			
+			&.prem_corto {
+				background-position: -255px -85px;
+
+			}
+		}
+	}
+}
+
+/*----------------------- Bases ----------------------- */
+.bg-acordeon-show {
+		display: block !important;
+} 
+.estado-acordeon  {
+	position: relative;
+	z-index: 101;
+}
+.bg-acordeon {
+		background: rgba(0, 0, 0, 0.9);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: none;
+		z-index: 100;
+}
+
+.panel-group#accordion {
+	.panel {
+		border: none;
+			margin: 0;
+		.panel-heading	{
+			background: @tabs;
+			color: @white;
+			border: none;
+			margin: 0;
+			padding: 30px 0;
+		.panel-title {
+				text-transform: uppercase;
+			}
+		}
+		.panel-collapse {
+			background: darken(@tabs, 8%);
+			.panel-body {
+			border: none;
+			color: @gray-lighter;
+			}
+		}
+		&.panel-1 {
+			.panel-heading	{
+				background: @tabs;
+				color: @white;
+			.panel-title {
+
+				}
+			}
+			.panel-collapse {
+				.panel-body { 
+
+				}
+			}
+
+		}
+		&.panel-2 {
+			.panel-heading	{
+				background: darken(@tabs, 2%);
+				color: @white;
+			.panel-title {
+
+			}
+		}
+		.panel-collapse {
+			.panel-body {
+
+			}
+		}
+
+		}
+		&.panel-3 {
+			.panel-heading	{
+				background: darken(@tabs, 4%);
+				color: @white;
+			.panel-title {
+
+			}
+		}
+		.panel-collapse {
+			.panel-body {
+
+			}
+		}
+
+		}
+	}
+}
+/*----------------------- TABS SOCIALES ----------------------- */
+
+#tab-social {
+	padding: 40px 0;
+	.superior {
+		border-bottom: 1px solid @brand-primary;
+		.nav-tabs {
+			border: none;
+			li {
+			    float: left;
+			    display: block;
+			    width: 20%;
+			    margin-bottom: -1px;
+			    font-size: 20px;
+			    text-align: center;
+			    text-transform: uppercase;
+			    a {
+			    	color: @gray-light;
+			    }
+			    &.active {
+			    	a {
+			    		border-top: 2px solid @brand-primary;
+			    		color: @brand-primary;
+			    	}
+			    	
+			    }
+			}	
+		}
+	}
+	.inferior {
+		.tab-content {
+			.tab-pane {
+				padding: 25px 0;
+			}
+		}
+	}
+}
+
+/*----------------------- Marcas ----------------------- */
+
+#marcas {
+	background: @gray-dark;
+	padding: 40px 0;
+	ul#brand-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			float: left;
+			a.brand-logo {
+				display: block;
+				width: 75px;
+				height: 75px;
+				margin: 5px;
+			}
+		}
+	}
+}
+
+#copyright {
+	padding: 30px 0;
+	background: @gray-darker;
+	color: @gray-lighter;
+	a {
+		color: @gray-lighter;
+	}
+}

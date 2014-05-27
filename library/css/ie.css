@@ -1,0 +1,82 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/*
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't 
+understand (what's inside the media queries). We also need to
+import the mixins file so LESS can understand the variables.
+*/
+article.item-noticia {
+  position: relative;
+  margin: 20px 0;
+}
+article.item-noticia header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10%;
+}
+article.item-noticia header h4 {
+  color: #eeeeee;
+}
+article.item-noticia header h4 small {
+  display: inline-block;
+  padding-top: 10px;
+  color: #eeeeee;
+  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+}
+#cta-slide .carousel-caption {
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  width: 420px;
+  margin: -150px -210px;
+  height: 300px;
+  padding: 150px 20px;
+  background: url('../images/marco-frame.png') no-repeat scroll 0% 0% transparent;
+}
+article.item-noticia header {
+  padding: 20% ;
+}
+article.item-noticia header h4 {
+  color: #eeeeee;
+}
+article.item-noticia header h4 small {
+  padding-top: 20px;
+}
+/* 
+you can call the larger styles if you want, but there's really no need 
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/
