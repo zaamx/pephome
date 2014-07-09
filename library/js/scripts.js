@@ -91,13 +91,13 @@ var timeToWaitForLast = 100;
  * then we can swap out those images since they are located in a data attribute.
 */
 function loadGravatars() {
-  // set the viewport using the function above
-  viewport = updateViewportDimensions();
-  // if the viewport is tablet or larger, we load in the gravatars
-  if (viewport.width >= 768) {
-  jQuery('.comment img[data-gravatar]').each(function(){
-    jQuery(this).attr('src',$(this).attr('data-gravatar'));
-  });
+	// set the viewport using the function above
+	viewport = updateViewportDimensions();
+	// if the viewport is tablet or larger, we load in the gravatars
+	if (viewport.width >= 768) {
+	jQuery('.comment img[data-gravatar]').each(function(){
+		jQuery(this).attr('src',$(this).attr('data-gravatar'));
+	});
 	}
 } // end function
 
@@ -105,45 +105,50 @@ function loadGravatars() {
 /*
 
 
-
-
-
-
-
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {
 
-  /*
-   * Let's fire off the gravatar function
-   * You can remove this if you don't need it
-  */
-  loadGravatars();
+	/*
+	 * Let's fire off the gravatar function
+	 * You can remove this if you don't need it
+	*/
+	loadGravatars();
+
+		$('#crrousel').carousel({
+							interval: 5000
+			});
+		 $('[id^=carousel-selector-]').click( function(){
+					var id_selector = $(this).attr("id");
+					var id = id_selector.substr(id_selector.length-1);
+					var id = parseInt(id);
+					$('#crrousel').carousel(id);
+			});
 
 }); /* end of as page load scripts */
 
 function heroInit() {
-    var hero = jQuery('#inicio'),
-    winHeight = jQuery(window).height(),
-    heroHeight = winHeight;
-    hero.css({height: heroHeight+"px"});
-  };
-  jQuery(window).on("resize", heroInit);
-  jQuery(document).on("ready", heroInit);
+		var hero = jQuery('#inicio'),
+		winHeight = jQuery(window).height(),
+		heroHeight = winHeight;
+		hero.css({height: heroHeight+"px"});
+	};
+	jQuery(window).on("resize", heroInit);
+	jQuery(document).on("ready", heroInit);
 
  $(function() {           
-    $('.panel-collapse').on('show.bs.collapse', function () {
-      $(this).parent( '.panel' ).toggleClass('estado-acordeon');
-      $('.bg-acordeon').toggleClass('bg-acordeon-show');
-    })
-      
-    $('.panel-collapse').on('hidden.bs.collapse', function () {
-      $(this).parent( '.panel' ).toggleClass('estado-acordeon');
-      $('.bg-acordeon').toggleClass('bg-acordeon-show');
-    })
+		$('.panel-collapse').on('show.bs.collapse', function () {
+			$(this).parent( '.panel' ).toggleClass('estado-acordeon');
+			$('.bg-acordeon').toggleClass('bg-acordeon-show');
+		})
+			
+		$('.panel-collapse').on('hidden.bs.collapse', function () {
+			$(this).parent( '.panel' ).toggleClass('estado-acordeon');
+			$('.bg-acordeon').toggleClass('bg-acordeon-show');
+		})
 
-    $('.bg-acordeon').on('click', function(e) {
-      e.preventDefault();
-      $('.panel-collapse').collapse('hide');
-    });
-  });
+		$('.bg-acordeon').on('click', function(e) {
+			e.preventDefault();
+			$('.panel-collapse').collapse('hide');
+		});
+	});
