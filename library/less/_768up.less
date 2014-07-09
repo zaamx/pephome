@@ -1,4 +1,8 @@
 #cta-slide {
+	img.img-slider {
+		width: 100%;
+		height: auto;
+	}
 	.carousel-caption {
 	    left: 50%;
 	    right: 50%;
@@ -11,4 +15,49 @@
 	    background: url('../images/marco-frame.png') no-repeat scroll 0% 0% transparent;
 	}
 }
-
+.inicio-block {
+		width: 50%;
+		margin: 0 auto;
+		height: 100%;
+		position: relative;
+		.inicio-head {
+				#logo {
+						padding: 5%;
+						a#logo-link {
+							display: block;
+							width: 100%;
+							img {
+								max-width: 100%;
+								height: auto;
+							}
+						}
+				}
+				.cta-inicio {
+						font-family: @font-family-tits;
+						color: @gray-lighter;
+						text-transform: uppercase;
+						font-size: 25px;
+						border-bottom: 5px solid @gray-lighter;
+						padding: 0 0 2%;
+						h2 {
+								margin: 0 0 5%;
+						}
+				}
+		}
+		.inicio-footer {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				.player {
+						color: @gray-lighter;
+						font-size: 20px;
+				}
+				.mas {
+						a {
+								color: @gray;
+								font-size: 30px;
+						}
+				}
+		}
+} 

@@ -103,6 +103,13 @@ function loadGravatars() {
 
 
 /*
+
+
+
+
+
+
+
  * Put all your regular jQuery in here.
 */
 jQuery(document).ready(function($) {

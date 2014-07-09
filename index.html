@@ -33,7 +33,7 @@
 						<div class="inicio-block">
 								<div class="inicio-head text-center">
 										<div id="logo" class="text-center">
-												<a href="">
+												<a id="logo-link" href="">
 													<img src="library/images/logo_trans.png" alt="">
 												</a>
 										</div>
@@ -82,7 +82,7 @@
 									<!-- Collect the nav links, forms, and other content for toggling -->
 									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 										<ul class="nav navbar-nav">
-											<li class="active"><a href="#">Link</a></li>
+											<li class="active"><a href="index.html">Link</a></li>
 											<li><a href="#">Link</a></li>
 											<li class="dropdown">
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -174,19 +174,19 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
 								<div class="item active">
-									<img class="img-responsive2" src="http://placehold.it/1600x600" alt="">
+									<img class="img-slider" src="http://placehold.it/1600x600" alt="">
 									<div class="carousel-caption">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fugiat!
 									</div>
 								</div>
 								<div class="item">
-									<img class="img-responsive2" src="http://placehold.it/1600x600" alt="">
+									<img class="img-slider" src="http://placehold.it/1600x600" alt="">
 									<div class="carousel-caption">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fugiat!
 									</div>
 								</div>
 								<div class="item">
-									<img class="img-responsive2" src="http://placehold.it/1600x600" alt="">
+									<img class="img-slider" src="http://placehold.it/1600x600" alt="">
 									<div class="carousel-caption">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fugiat!
 									</div>
@@ -205,7 +205,9 @@
 				<!-- FIn Slide de CTA's -->
 
 				<!-- Premios  -->
-<!--				http://tympanus.net/codrops/2013/04/23/fullscreen-layout-with-page-transitions/-->
+<!--
+				http://tympanus.net/codrops/2013/04/23/fullscreen-layout-with-page-transitions/
+-->
 				<div id="premios">
 						<div class="container">
 							<div class="row">
@@ -221,66 +223,238 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-3">
-									<div class="item-premio item-mundo text-center">
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-mundo text-center" data-toggle="modal" data-target="#mod-mundo">
 										<div class="prem prem_mundo"></div>
 										<h4>Mejor Fotografía <br>por el planeta</h4>
 										<span>Premio Especial</span>
+
+									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-mundo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-3">
-									<div class="item-premio item-mx text-center">
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-mx text-center" data-toggle="modal" data-target="#mod-mx">
 										<div class="prem prem-mx"></div>
 										<h4>Mejor Fotografía <br>Mexicana</h4>
 										 <span>Premio Especial</span>
 									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-mx" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col-sm-3">
-									<div class="item-premio item-pub text-center">
+								<div class="clearfix visible-xs"></div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-pub text-center" data-toggle="modal" data-target="#mod-pub">
 										<div class="prem prem_pub"></div>
 										<h4>Mejor Fotografía <br>premio del público</h4>
 										<span>Premio Especial</span>
 									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-pub" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col-sm-3">
-									<div class="item-premio item-kids text-center">
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-kids text-center" data-toggle="modal" data-target="#mod-kids">
 										<div class="prem prem_kids"></div>
 										<h4>Mejor Fotografía <br>jóvenes y niños</h4>
-										<span>modalidad jóvenes y niños</span>
+										<span>jóvenes y niños</span>
+									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-kids" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-sm-3">
-									<div class="item-premio item-cat text-center">
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-cat text-center" data-toggle="modal" data-target="#mod-cat">
 										<div class="prem prem_cat"></div>
 										<h4>mejor fotografía <br>por categoría</h4>
 										<span>Premio categoría</span>
 									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-cat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col-sm-3">
-									<div class="item-premio item-fram text-center">
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-fram text-center" data-toggle="modal" data-target="#mod-fram">
 										<div class="prem prem_fram"></div>
 										<h4>six frames<br>for change</h4>
 										<span>Premio categoría</span>
 									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-fram" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col-sm-3">
-									<div class="item-premio item-biom text-center">
+								<div class="clearfix visible-xs"></div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-biom text-center" data-toggle="modal" data-target="#mod-biom">
 										<div class="prem prem_biom"></div>
 											<h4>preyecto de foto <br>bioma mexicano</h4>
 											<span>Premio categoría</span>
 									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-biom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col-sm-3">
-									<div class="item-premio item-corto text-center">
+								<div class="col-sm-3 col-xs-6">
+									<div class="item-premio item-corto text-center" data-toggle="modal" data-target="#mod-corto">
 										<div class="prem prem_corto"></div>
 										<h4>video corto <br>de conservación</h4>
 										<span>Premio categoría</span>
 									</div>
+									<!-- Modal -->
+									<div class="modal fade" id="mod-corto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg ">
+											<div class="modal-content">
+												<div class="modal-header">
+													<!-- <div class="prem prem_mundo"></div> -->
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+													<h4 class="modal-title" id="myModalLabel">Mejor Fotografía por el planeta</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ratione nostrum delectus temporibus assumenda culpa.</p>
+
+												</div>
+												<div class="modal-body">
+													...
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+													
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+
 				</div>
 				<!-- FIn de Premios  -->
 
@@ -307,13 +481,13 @@
 							<div class="panel-heading">
 								<div class="container">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan1">
 											Collapsible Group Item #1
 										</a>
 									</h4>
 								</div>
 							</div>
-							<div id="collapseOne" class="panel-collapse collapse">
+							<div id="pan1" class="panel-collapse collapse">
 								<div class="panel-body">
 									<div class="container">
 										<p> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
@@ -325,13 +499,13 @@
 							<div class="panel-heading">
 								<div class="container">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan2">
 											Collapsible Group Item #2
 										</a>
 									</h4>	
 								</div>
 							</div>
-							<div id="collapseTwo" class="panel-collapse collapse">
+							<div id="pan2" class="panel-collapse collapse">
 								<div class="panel-body">
 									<div class="container">
 										<p>
@@ -345,13 +519,213 @@
 							<div class="panel-heading">
 								<div class="container">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan3">
 											Collapsible Group Item #3
 										</a>
 									</h4>	
 								</div>
 							</div>
-							<div id="collapseThree" class="panel-collapse collapse">
+							<div id="pan3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-4 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan4">
+											Collapsible Group Item #4
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan4" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-5 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan5">
+											Collapsible Group Item #5
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan5" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-6 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan6">
+											Collapsible Group Item #6
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan6" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-7 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan7">
+											Collapsible Group Item #7
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan7" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-8 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan8">
+											Collapsible Group Item #8
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan8" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-9 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan9">
+											Collapsible Group Item #9
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan9" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-10 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan10">
+											Collapsible Group Item #10
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan10" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-11 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan11">
+											Collapsible Group Item #11
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan11" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-12 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan12">
+											Collapsible Group Item #12
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan12" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="container">
+										<p>
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</p>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-13 panel-default">
+							<div class="panel-heading">
+								<div class="container">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#pan13">
+											Collapsible Group Item #13
+										</a>
+									</h4>	
+								</div>
+							</div>
+							<div id="pan13" class="panel-collapse collapse">
 								<div class="panel-body">
 									<div class="container">
 										<p>
@@ -385,7 +759,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-2 cont-persona">
+							<div class="col-sm-2 col-xs-6 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x320" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x320/000000" alt="">
@@ -399,7 +773,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-2 cont-persona">
+							<div class="col-sm-2 col-xs-6 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x320" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x320/000000" alt="">
@@ -413,7 +787,8 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-2 cont-persona">
+							<div class="clearfix visible-xs"></div>
+							<div class="col-sm-2 col-xs-6 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x320" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x320/000000" alt="">
@@ -427,7 +802,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-2 cont-persona">
+							<div class="col-sm-2 col-xs-6 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x320" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x320/000000" alt="">
@@ -441,7 +816,8 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-2 cont-persona">
+							<div class="clearfix visible-xs"></div>
+							<div class="col-sm-2 col-xs-6 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x320" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x320/000000" alt="">
@@ -455,7 +831,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-2 cont-persona">
+							<div class="col-sm-2 col-xs-6 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x320" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x320/000000" alt="">
@@ -491,7 +867,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-19 cont-persona">
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -505,7 +881,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -519,7 +895,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -533,7 +909,8 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="clearfix visible-xs"></div>
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -547,7 +924,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -561,7 +938,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -575,7 +952,8 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="clearfix visible-xs"></div>
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -589,7 +967,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -603,7 +981,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-sm-19 cont-persona">
+							<div class="col-sm-19 col-xs-4 cont-persona">
 								<article class="item-persona">
 									<img class="img-responsive img-1"  src="http://placehold.it/320x400" alt="">
 									<img class="img-responsive img-2" src="http://placehold.it/320x400/000000" alt="">
@@ -623,9 +1001,6 @@
 				</div>
 				<!-- Fin de comite -->
 
-<!-- <div class="boxInt">
-								<img src="library/images/boxes-inf.png" alt="">
-						</div> -->
 				<!-- Noticias  -->
 				<div id="noticias">
 					<div class="boxInt">
@@ -645,7 +1020,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-4 col-sm-4 col-xs-6">
+							<div class="col-md-4 col-sm-4 col-xs-12">
 								<article class="item-noticia text-center">
 									<img class="img-responsive2" src="http://placehold.it/320x320" alt="">
 									<header>
@@ -659,7 +1034,7 @@
 								</article>
 							</div>
 
-							<div class="col-md-4 col-sm-4 col-xs-6">
+							<div class="col-md-4 col-sm-4 col-xs-12">
 								<article class="item-noticia text-center">
 									<img class="img-responsive2" src="http://placehold.it/320x320" alt="">
 									<header>
@@ -672,7 +1047,7 @@
 									</header>
 								</article>
 							</div>
-							<div class="col-md-4 col-sm-4 col-xs-6">
+							<div class="col-md-4 col-sm-4 col-xs-12">
 								<article class="item-noticia text-center">
 									<img class="img-responsive2" src="http://placehold.it/320x320" alt="">
 									<header>
@@ -849,9 +1224,6 @@
 				<!-- Placed at the end of the document so the pages load faster -->
 								
 				<script src="library/js/libs/bootstrap.min.js"></script>
-				<script src="library/js/libs/jquery.easing.1.3.js"></script>
-				<script src="library/js/libs/jquery.mousewheel.js"></script>
-				<script src="library/js/libs/jquery.vaccordion.js"></script>
 				<script src="library/js/scripts.js"></script>
 </body>
 </html>

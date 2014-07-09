@@ -16,26 +16,14 @@ read those. Below, we need to import only the stuff IE can't
 understand (what's inside the media queries). We also need to
 import the mixins file so LESS can understand the variables.
 */
-article.item-noticia {
-  position: relative;
-  margin: 20px 0;
+/*----------------------- Slider ----------------------- */
+#cta-slide img.img-slider {
+  height: 250px;
+  width: auto;
 }
-article.item-noticia header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 10%;
-}
-article.item-noticia header h4 {
-  color: #eeeeee;
-}
-article.item-noticia header h4 small {
-  display: inline-block;
-  padding-top: 10px;
-  color: #eeeeee;
-  font-family: "Roboto Slab", Georgia, "Times New Roman", Times, serif;
+#cta-slide img.img-slider {
+  width: 100%;
+  height: auto;
 }
 #cta-slide .carousel-caption {
   left: 50%;
@@ -47,6 +35,48 @@ article.item-noticia header h4 small {
   height: 300px;
   padding: 150px 20px;
   background: url('../images/marco-frame.png') no-repeat scroll 0% 0% transparent;
+}
+.inicio-block {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.inicio-block .inicio-head #logo {
+  padding: 5%;
+}
+.inicio-block .inicio-head #logo a#logo-link {
+  display: block;
+  width: 100%;
+}
+.inicio-block .inicio-head #logo a#logo-link img {
+  max-width: 100%;
+  height: auto;
+}
+.inicio-block .inicio-head .cta-inicio {
+  font-family: "Oswald", Georgia, "Times New Roman", Times, serif;
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-size: 25px;
+  border-bottom: 5px solid #eeeeee;
+  padding: 0 0 2%;
+}
+.inicio-block .inicio-head .cta-inicio h2 {
+  margin: 0 0 5%;
+}
+.inicio-block .inicio-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.inicio-block .inicio-footer .player {
+  color: #eeeeee;
+  font-size: 20px;
+}
+.inicio-block .inicio-footer .mas a {
+  color: #555555;
+  font-size: 30px;
 }
 article.item-noticia header {
   padding: 20% ;
