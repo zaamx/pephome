@@ -345,6 +345,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/sprite-premios-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16560,
+		"inputAbbreviatedPath": "\/library\/images\/sprite-premios-white.png",
+		"outputAbbreviatedPath": "\/library\/images\/sprite-premios-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/sprite-premios.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -439,6 +450,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/library\/js\/libs\/modernizr.custom.min.js",
 		"outputAbbreviatedPath": "\/library\/js\/libs\/min\/modernizr.custom.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/library\/js\/min\/scripts-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/library\/js\/min\/scripts-ck.js",
+		"outputAbbreviatedPath": "\/library\/js\/min\/min\/scripts-ck-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

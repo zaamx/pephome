@@ -187,6 +187,11 @@ article.item-noticia {
 		margin: 0 -15px;
 		padding: 50px 20px;
 		cursor: pointer;
+		position: relative;
+		.hover-cont {
+			display: none;
+
+		}
 		h4,span {
 			text-transform: uppercase;
 		}
@@ -196,54 +201,108 @@ article.item-noticia {
 			padding-top: 5px;
 
 		}
-		
+		&:hover, &:focus {
+			.hover-cont {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				color: @gray-lighter;
+				padding: 20px 5px 0;
+				.prem	{
+					background-image: url('../images/sprite-premios-white.png') ;
+				}
+				.iconprem {
+					font-size: 45px;
+					text-align: center;
+					float: left;
+					width: 30%;
+				}
+				.hc-txt {
+					float: left;
+					width: 70%;
+					text-align: left;
+					span {
+						border: none;
+					}
+					h3 {
+						margin: 0 0;
+					}
+				}
+			}	
+		}
 		&.item-mundo {
 			color: @prem-1;
 			&:hover {
 				border: 1px solid @prem-1;
+				.hover-cont {
+					background: @prem-1;
+				}
 			}
-			
 		}
 		&.item-mx {
 			color: @prem-2;
 			&:hover {
 				border: 1px solid @prem-2;
+				.hover-cont {
+					background: @prem-2;
+				}
 			}
 		}
 		&.item-pub {
 			color: @prem-3;
 			&:hover {
 				border: 1px solid @prem-3;
+				.hover-cont {
+					background: @prem-3;
+				}
 			}
 		}
 		&.item-kids {
 			color: @prem-4;
 			&:hover {
 				border: 1px solid @prem-4;
+				.hover-cont {
+					background: @prem-4;
+				}
 			}
 		}
 		&.item-cat {
 			color: @prem-8;
 			&:hover {
 				border: 1px solid @prem-8;
+				.hover-cont {
+					background: @prem-8;
+				}
 			}
 		}
 		&.item-fram {
 			color: @prem-7;
 			&:hover {
 				border: 1px solid @prem-7;
+				.hover-cont {
+					background: @prem-7;
+				}
 			}
 		}
 		&.item-biom {
 			color: @prem-6;
 			&:hover {
 				border: 1px solid @prem-6;
+				.hover-cont {
+					background: @prem-6;
+				}
 			}
 		}
 		&.item-corto {
 			color: @prem-5;
 			&:hover {
 				border: 1px solid @prem-5;
+				.hover-cont {
+					background: @prem-5;
+				}
 			}
 		}
 		.prem {
@@ -292,30 +351,30 @@ article.item-noticia {
 		color: @prem-1;
 		text-align: left;
 	}
-		#mod-mundo {
-			color: @prem-1;
-		}
-		#mod-mx {
-			color: @prem-2;
-		}
-		#mod-pub {
-			color: @prem-3;
-		}
-		#mod-kids {
-			color: @prem-4;
-		}
-		#mod-cat {
-			color: @prem-8;
-		}
-		#mod-fram {
-			color: @prem-7;
-		}
-		#mod-biom {
-			color: @prem-6;
-		}
-		#mod-corto {
-			color: @prem-5;
-		}
+	#mod-mundo {
+		color: @prem-1;
+	}
+	#mod-mx {
+		color: @prem-2;
+	}
+	#mod-pub {
+		color: @prem-3;
+	}
+	#mod-kids {
+		color: @prem-4;
+	}
+	#mod-cat {
+		color: @prem-8;
+	}
+	#mod-fram {
+		color: @prem-7;
+	}
+	#mod-biom {
+		color: @prem-6;
+	}
+	#mod-corto {
+		color: @prem-5;
+	}
 
 }
 

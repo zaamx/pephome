@@ -5118,15 +5118,15 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 1;
-  filter: alpha(opacity=100);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .modal-header {
   padding: 15px;
