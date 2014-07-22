@@ -115,11 +115,11 @@ jQuery(document).ready(function($) {
 	*/
 	loadGravatars();
 
-		// $("header.header").sticky({
-		// 	topSpacing: 0,
-		// 	// className: 'container',
-		// 	wrapperClassName: 'head-fixed'
-		// });
+		$("#nav").sticky({
+			topSpacing: 0,
+			// className: 'container',
+			wrapperClassName: 'head-fixed'
+		});
 
 		$('#crrousel').carousel({
 							interval: 5000
@@ -142,12 +142,12 @@ function heroInit() {
 	jQuery(window).on("resize", heroInit);
 	jQuery(document).on("ready", heroInit);
 
- $(function() {           
+ $(function() {
 		$('.panel-collapse').on('show.bs.collapse', function () {
 			$(this).parent( '.panel' ).toggleClass('estado-acordeon');
 			$('.bg-acordeon').toggleClass('bg-acordeon-show');
 		})
-			
+
 		$('.panel-collapse').on('hidden.bs.collapse', function () {
 			$(this).parent( '.panel' ).toggleClass('estado-acordeon');
 			$('.bg-acordeon').toggleClass('bg-acordeon-show');

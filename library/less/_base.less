@@ -87,7 +87,7 @@
 			}
 			.modal-body {
 				padding-top: 0;
-				.modal-gal, 
+				.modal-gal,
 				.modal-bio {
 					background: url('../images/bg-color-ng.png') no-repeat;
 					padding: 15px 0;
@@ -114,7 +114,7 @@
 			}
 		}
 	}
-		
+
 }
 
 article.item-noticia {
@@ -125,7 +125,7 @@ article.item-noticia {
 	}
 	header {
 		background: url('../svg/frame-noticias.svg') rgba(0, 0, 0, 0.6);
-		background-size: 100% 100%; 
+		background-size: 100% 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -155,7 +155,7 @@ article.item-noticia {
 		 -moz-background-size: cover;
 		 -o-background-size: cover;
 
-		
+
 }
 .inicio-block {
 		width: 90%;
@@ -189,7 +189,7 @@ article.item-noticia {
 				}
 		}
 		.inicio-footer {
-			margin-top: 200px;
+			margin-top: 20px;
 				// position: absolute;
 				// bottom: 0;
 				// left: 0;
@@ -205,19 +205,48 @@ article.item-noticia {
 						}
 				}
 		}
-} 
-/*----------------------- Navegacion ----------------------- */
-#nav {
-		background: @white;
-		padding: 10px 0;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		.navbar-brand {
-			margin: -20px 0 0;
-		}
 }
+/*----------------------- Navegacion ----------------------- */
+.head-fixed {
+	background: @white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	#nav {
+		padding:10px 0;
+		background: @white;
+			.navbar-brand {
+				margin: -20px 0 0;
+				img {
+					width:165px;
+					height:62px;
+
+					transition:all 1s ease 0s ;
+					-webkit-transition:all 1s ease0s ;
+					-moz-transition:all 1s ease 0s;
+					-o-transition:all 1s ease 0s;
+				}
+			}
+	}
+	&.is-sticky {
+
+		#nav {
+			width:100%;
+			padding:5px 0;
+			.box-shadow(@sombra-nav );
+			.navbar-brand {
+				margin: -20px 0 0;
+				img {
+					width:155px;
+					height:52px;
+				}
+			}
+		}
+	}
+}
+
 /*----------------------- Navegacion ----------------------- */
 #intro {
 	#cta-home {
@@ -285,7 +314,7 @@ article.item-noticia {
 						margin: 0 0;
 					}
 				}
-			}	
+			}
 		}
 		&.item-mundo {
 			color: @prem-1;
@@ -394,7 +423,7 @@ article.item-noticia {
 				background-position: -170px -85px;
 
 			}
-			
+
 			&.prem_corto {
 				background-position: -255px -85px;
 
@@ -435,7 +464,7 @@ article.item-noticia {
 /*----------------------- Bases ----------------------- */
 .bg-acordeon-show {
 		display: block !important;
-} 
+}
 .estado-acordeon  {
 	position: relative;
 	z-index: 101;
@@ -476,7 +505,7 @@ article.item-noticia {
 					display: inline-block;
 					width: 100%;
 					span.icon-tab {
-						
+
 					}
 				}
 			}
@@ -514,9 +543,9 @@ article.item-noticia {
 			    		border-top: 2px solid @brand-primary;
 			    		color: @brand-primary;
 			    	}
-			    	
+
 			    }
-			}	
+			}
 		}
 	}
 	.inferior {
