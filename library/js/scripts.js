@@ -115,6 +115,12 @@ jQuery(document).ready(function($) {
 	*/
 	loadGravatars();
 
+		// $("header.header").sticky({
+		// 	topSpacing: 0,
+		// 	// className: 'container',
+		// 	wrapperClassName: 'head-fixed'
+		// });
+
 		$('#crrousel').carousel({
 							interval: 5000
 			});

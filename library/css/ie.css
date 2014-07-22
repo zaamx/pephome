@@ -39,7 +39,6 @@ import the mixins file so LESS can understand the variables.
 .inicio-block {
   width: 50%;
   margin: 0 auto;
-  height: 100%;
   position: relative;
 }
 .inicio-block .inicio-head #logo {
@@ -63,12 +62,6 @@ import the mixins file so LESS can understand the variables.
 }
 .inicio-block .inicio-head .cta-inicio h2 {
   margin: 0 0 5%;
-}
-.inicio-block .inicio-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .inicio-block .inicio-footer .player {
   color: #eeeeee;

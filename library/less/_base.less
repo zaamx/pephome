@@ -160,7 +160,7 @@ article.item-noticia {
 .inicio-block {
 		width: 90%;
 		margin: 0 auto;
-		height: 100%;
+		// height: 100%;
 		position: relative;
 		.inicio-head {
 				#logo {
@@ -189,10 +189,11 @@ article.item-noticia {
 				}
 		}
 		.inicio-footer {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
+			margin-top: 200px;
+				// position: absolute;
+				// bottom: 0;
+				// left: 0;
+				// right: 0;
 				.player {
 						color: @gray-lighter;
 						font-size: 20px;
@@ -209,6 +210,10 @@ article.item-noticia {
 #nav {
 		background: @white;
 		padding: 10px 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
 		.navbar-brand {
 			margin: -20px 0 0;
 		}
@@ -458,99 +463,29 @@ article.item-noticia {
 			border-bottom: 1px solid @gray-lighter;
 		}
 		.panel-heading	{
-			// background: @tabs;
-			color: @gray;
+			background: @white;
+			color: @tabs;
+			// border-bottom: 1px solid @gray-lighter;
 			border: none;
 			margin: 0;
-			padding: 15px 0;
+			padding: 25px 0;
 		.panel-title {
 				text-transform: uppercase;
 				font-weight: 300;
+				a {
+					display: inline-block;
+					width: 100%;
+					span.icon-tab {
+						
+					}
+				}
 			}
 		}
 		.panel-collapse {
+			border-top: 1px solid @gray-lighter;
 			.panel-body {
 				border: none;
 				color: @gray;
-			}
-		}
-
-		&.panel-1 {
-			.panel-heading	{
-				color: @pancol-1;
-				border-left: 7px solid @pancol-1 !important;
-			}
-		}
-		&.panel-2 {
-			.panel-heading	{
-				color: @pancol-2;
-				border-left: 7px solid @pancol-2 !important;
-			}
-		}
-		&.panel-3 {
-			.panel-heading	{
-				color: @pancol-3;
-				border-left: 7px solid @pancol-3 !important;
-			}
-		}
-		&.panel-4{
-			.panel-heading	{
-				color: @pancol-4;
-				border-left: 7px solid @pancol-4 !important;
-			}
-		}
-		&.panel-5 {
-			.panel-heading	{
-				color: @pancol-5;
-				border-left: 7px solid @pancol-5 !important;
-			}
-		}
-		&.panel-6 {
-			.panel-heading	{
-				color: @pancol-6;
-				border-left: 7px solid @pancol-6 !important;
-			}
-		}
-		&.panel-7 {
-			.panel-heading	{
-				color: @pancol-7;
-				border-left: 7px solid @pancol-7 !important;
-			}
-		}
-		&.panel-8 {
-			.panel-heading	{
-				color: @pancol-8;
-				border-left: 7px solid @pancol-8 !important;
-			}
-		}
-		&.panel-9 {
-			.panel-heading	{
-				color: @pancol-9;
-				border-left: 7px solid @pancol-9 !important;
-			}
-		}
-		&.panel-10 {
-			.panel-heading	{
-				color: @pancol-10;
-				border-left: 7px solid @pancol-10 !important;
-			}
-		}
-		&.panel-11 {
-			.panel-heading	{
-				color: @pancol-12;
-				border-left: 7px solid @pancol-11 !important;
-			}
-		}
-		&.panel-12 {
-			.panel-heading	{
-				color: @pancol-12;
-				border-left: 7px solid @pancol-12 !important;
-			}
-		}
-		&.panel-13 {
-			.panel-heading	{
-				color: @pancol-13;
-				border-left: 7px solid @pancol-13 !important;
 			}
 		}
 	}
